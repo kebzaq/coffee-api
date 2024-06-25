@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+}
+main {
+  text-align: left;
+}
+
+img {
+  width: 250px;
+}
+.container {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+item {
+  margin: 20px;
+}

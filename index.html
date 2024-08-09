@@ -4,22 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
     <title>Coffee API</title>
   </head>
-  <body>
+  <body class="bg-yellow-500">
     <header>
-      <h1>Coffee API Project</h1>
+      <h1 class="text-4xl font-extrabold dark:text-white">
+        Coffee API Project
+      </h1>
       <div>
-        <button onclick="showHotCoffee()">Show HOT Coffee</button>
-        <button onclick="showIcedCoffee()">Show ICED Coffee</button>
+        <button
+          onclick="showHotCoffee()"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Show HOT Coffee
+        </button>
+        <button
+          onclick="showIcedCoffee()"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Show ICED Coffee
+        </button>
       </div>
     </header>
-    <main class="container">
-      <div class="item">
-        <h2 id="title"></h2>
+    <main class="flex space-x-6 space-y-10">
+      <div class="flex-1 w-1/3 text-right">
+        <h2 id="title" class="text-4xl font-extrabold dark:text-white"></h2>
         <ul id="result"></ul>
       </div>
-      <div id="card" class="'item"></div>
+      <div id="card" class="flex-2 w-2/3"></div>
     </main>
 
     <script src="script.js"></script>
